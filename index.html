@@ -1,1 +1,81 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grace Liu - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Toggle switch for light and dark mode -->
+  <div class="toggle-switch">
+    <input type="checkbox" id="toggleMode" class="toggle-checkbox">
+    <label for="toggleMode" class="toggle-label"></label>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <!-- Profile Picture -->
+      <img src="profilepic.png" alt="Profile Picture">
+      
+      <!-- Your sidebar content goes here -->
+      <h1>Grace Liu</h1>
+      <p>Aspiring Software Engineer</p>
+      <!-- Add more information about yourself, like contact info, social media links, etc. -->
+
+      <!-- Contacts Section -->
+      <div class="contacts">
+        <h2>Contact Me</h2>
+        <p>Email: grace.liu@example.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/grace-liu" target="_blank">linkedin.com/in/grace-liu</a></p>
+        <!-- Add more contact information as needed -->
+      </div>
+    </div>
+    <div class="main-content-container">
+      <div class="main-content">
+        <!-- Your main content goes here -->
+        <h2>About Me</h2>
+        <p>Seeking a software engineering role at a technology company where I can leverage my computer science education and proficiency in C++/C to develop innovative and scalable software solutions. As a recent graduate with project experience across full-stack development, I am eager to apply my skills in data structures, algorithms, and object-oriented programming to build robust, user-centric applications that positively impact people's lives.</p>
+        
+        <h2>Education</h2>
+        <p><b>University of Michigan - Ann Arbor</b><p></p>
+        <p> B.S. in Computer Science</p>
+        </p>●	Relevant Coursework: Data Structures and Algorithms, Database Management Systems, Web Systems, User Interface Development, Intro to Computer Security, and Mobile Application Development for Entrepreneurs</p>
+        
+        <h2>Portfolio</h2>
+        <div class="project">
+          <h3>Instagram Web Clone</h3>
+          <p> ● Developed a templated static site generator using HTML, CSS, Python programming, and shell scripting. </p>
+          <p> ●	Implemented an interactive website with a server-side dynamic page rendering system, including user creation, post management, comments, and likes.</p>
+          <p> ●	Utilized SQL for data storage and retrieval and implemented sessions for user authentication and session management.</p>
+          <p> ●	Created a client-side dynamic pages application with REST API and developed a JavaScript-based client application that interacts with the REST API using AJAX calls.</p>
+          <p> ●	Deployed to Amazon Web Services using EC2 instances, Gunicorn for server-side dynamic pages, and Nginx for static pages server.</p>
+        </div>
+
+        <div class="project">
+          <h3>Search Engine</h3>
+          <p> ● Developed a scalable search engine utilizing text analysis (tf-idf) and link analysis (PageRank) to display accurate and relevant search results.</p>
+          <p> ●	Implemented a pipeline of MapReduce programs to create a segmented inverted index of web pages, ensuring efficient indexing and retrieval of data.</p>
+          <p> ●	Built an Index server as a REST API app that returned search results in JSON format and developed a user-friendly Search server with a user interface resembling that of Google or Bing.</p>
+        </div>
+
+        <div class="project">
+          <h3>Projects++</h3>
+          <p> ●	Identified a gap in students' career exploration by analyzing seven interviews, leading to the conceptualization and proposal of an app that assists students in exploring diverse career paths within the computer science field through a compilation of profession-specific projects.</p>
+          <p> ●	Collaborated with a team of five to design a functional prototype of the app using Figma, prioritizing intuitive user experience and seamless navigation.</p>
+        </div>
+
+        <!-- More projects... -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleMode');
+    toggleBtn.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode');
+      document.getElementById('contacts').classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
