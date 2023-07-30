@@ -22,21 +22,7 @@ body {
   padding: 20px;
 }
 
-/* Style for light mode */
-.dark-mode .container {
-  background-color: #333;
-  color: #fff;
-}
-
-.dark-mode .sidebar {
-  background-color: #555;
-}
-
-.dark-mode h1, .dark-mode p, .dark-mode h2, .dark-mode h3 {
-  color: #fff;
-}
-
-/* Style for dark mode */
+/* Light mode styles */
 .container {
   background-color: #fff;
   color: #333;
@@ -48,6 +34,20 @@ body {
 
 h1, p, h2, h3 {
   color: #333;
+}
+
+/* Dark mode styles */
+.dark-mode .container {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .sidebar {
+  background-color: #555;
+}
+
+.dark-mode h1, .dark-mode p, .dark-mode h2, .dark-mode h3 {
+  color: #fff;
 }
 
 /* Light/Dark mode toggle switch */
@@ -122,7 +122,6 @@ h1, p, h2, h3 {
 
 .sidebar {
   flex: 1;
-  background-color: #f0f0f0;
   padding: 20px;
   min-width: 250px;
   position: sticky; /* Fix the left column */
