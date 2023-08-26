@@ -345,10 +345,10 @@ body.nav-active { overflow: hidden; }
 
 
 /*-----------------------------------*\
-  #ABOUT
+  #skills
 \*-----------------------------------*/
 
-.about .wrapper {
+.skills .wrapper {
   display: grid;
   gap: 50px;
   margin-block-end: 70px;
@@ -373,14 +373,14 @@ body.nav-active { overflow: hidden; }
 
 .progress-fill { height: inherit; }
 
-.about-card { text-align: center; }
+.skills-card { text-align: center; }
 
-.about-card .card-icon {
+.skills-card .card-icon {
   max-width: max-content;
   margin-inline: auto;
 }
 
-.about-card .card-title { margin-block: 16px 10px; }
+.skills-card .card-title { margin-block: 16px 10px; }
 
 /*-----------------------------------*\
   #EDUCATION
@@ -559,7 +559,7 @@ textarea.input-field {
 @media (min-width: 768px) {
   .container { max-width: 720px; }
   .section-text { --fs-5: 2rem; }
-  .about .grid-list { grid-template-columns: 1fr 1fr; }
+  .skills .grid-list { grid-template-columns: 1fr 1fr; }
   .project .title-wrapper {
     display: flex;
     justify-content: space-between;
@@ -653,12 +653,12 @@ textarea.input-field {
 
   .hero .btn-wrapper { justify-content: flex-start; }
 
-  .about .wrapper {
+  .skills .wrapper {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
-  .about .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .skills .grid-list { grid-template-columns: repeat(4, 1fr); }
 
   .project .grid-list {
     grid-template-columns: 1fr 1fr;
@@ -676,7 +676,7 @@ textarea.input-field {
   :is(.project-card-1, .project-card-2) .card-content { width: 33.33%; }
   :is(.project-card-1, .project-card-2) .card-banner { width: 66.66%; }
   .project-card-1 .card-content { padding-block-end: var(--padding); }
-  .project-card-2 .card-content { order: 1; }
+  .project-card-2 .card-content { padding-block-end: var(--padding); }
   .contact-card {
     grid-template-columns: 0.8fr 1fr;
     align-items: center;
@@ -688,7 +688,7 @@ textarea.input-field {
 @media (min-width: 1200px) {
   .container,
   .header { max-width: 1140px; }
-  .about .grid-list { gap: 50px; }
+  .skills .grid-list { gap: 50px; }
   .contact-card { gap: 150px; }
 }
 
@@ -698,7 +698,7 @@ textarea.input-field {
   .header { max-width: 1320px; }
   .hero .container { grid-template-columns: 1fr 0.8fr; }
   .hero .section-text { --fs-5: 2.4rem; }
-  .about .wrapper { gap: 100px; }
-  .about .grid-list { gap: 60px; }
+  .skills .wrapper { gap: 100px; }
+  .skills .grid-list { gap: 60px; }
 
 }
