@@ -407,6 +407,13 @@ body.nav-active { overflow: hidden; }
   margin-block-end: 8px;
   }
 
+  .relevant-courses {
+    padding-left:10px;
+  }
+  .course-details {
+    padding-left: 20px;
+  }
+
 /*-----------------------------------*\
   #PROJECTS
 \*-----------------------------------*/

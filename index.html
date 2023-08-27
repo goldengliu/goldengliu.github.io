@@ -75,21 +75,27 @@
         
 
         <div class="wrapper">
-          <a href="mailto:goldengliu@gmail.com" class="contact-link">goldengliu@gmail.com</a>
+          <a href="mailto:goldengliu@gmail.com" class="contact-link" target="_blank">goldengliu@gmail.com</a>
         </div>
-
+        
         <ul class="social-list">
           <li>
-            <a href="https://github.com/goldengliu" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
+            <a href="https://github.com/goldengliu" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon> 
             </a>
           </li>
           
           <li>
-            <a href="https://www.linkedin.com/in/goldengliu" class="social-link">
+            <a href="https://www.linkedin.com/in/goldengliu" class="social-link" target="_blank">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
-          </li>          
+          </li>
+          
+          <li>
+            <a href="https://scholar.google.com/citations?hl=en&user=vFM9iHUAAAAJ&view_op=list_works&gmla=AOV7GLNiyYOiG6vrVa9naX_SzIpzSN_8fqbmdydnnKm6KALEBhUxf9Gkrfsovav-lNsc2lO6H12aHyvh1LQZI2zl" class="social-link" target="_blank">
+              <ion-icon name="logo-google-scholar" md-dark></ion-icon>
+            </a>
+          </li>
         </ul>
 
       </nav>
@@ -118,16 +124,19 @@
             <div class="hero-content">
   
               <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-                Hello, I'm Grace!
+                Hi there! I'm Grace Liu.
               </h1>
-  
+              
               <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-                Recent Bachelors of Science Computer Science Graduate.
+                I recently graduated with my Bachelors of Science in Computer Science from the University of Michigan - Ann Arbor. 
               </p>
-  
+
               <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-                <a href="#" class="btn btn-primary">See My Work</a>
-                <a href="#" class="btn btn-secondary">Contact Me</a>
+
+                <button class="btn btn-primary" onclick="window.open('resume.pdf')">Resume</button>
+              
+                <a href="#projects" class="btn btn-secondary">See My Recent Projects</a>
+              
               </div>
   
             </div>
@@ -147,11 +156,11 @@
                 <h2 class="h2 section-title">Languages and Technologies</h2>
   
                 <p class="section-text">
-                  Languages: C/C++, Python, HTML/CSS, Javascript, SQL, GoLang
+                  Languages: C/C++, Python, JavaScript, HTML/CSS, SQL, GoLang
                   
                 </p>
                 <p class="section-text">
-                  Technologies: Git, Figma, REST API, Flask, AWS EC2 Instances, Docker, MapReduce, Omni CMS
+                  Technologies: Linux, Git, Figma, REST API, Flask, Docker AWS EC2 Instances, MapReduce
                   
                 </p>
   
@@ -164,7 +173,7 @@
                   <div class="label-wrapper">
                     <p>C/C++</p>
   
-                    <span class="span">100 %</span>
+                    <span class="span">5 years experiences</span>
                   </div>
   
                   <div class="progress">
@@ -178,11 +187,11 @@
                   <div class="label-wrapper">
                     <p>Python</p>
   
-                    <span class="span">80 %</span>
+                    <span class="span">2 years experience</span>
                   </div>
   
                   <div class="progress">
-                    <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
+                    <div class="progress-fill" style="width: 40%; background-color: #8caeec"></div>
                   </div>
   
                 </li>
@@ -190,9 +199,9 @@
                 <li class="progress-item">
   
                   <div class="label-wrapper">
-                    <p>HTML/CSS/Javascript</p>
+                    <p>HTML/CSS and JavaScript</p>
   
-                    <span class="span">90 %</span>
+                    <span class="span">proficient with front-end web development</span>
                   </div>
   
                   <div class="progress">
@@ -206,11 +215,11 @@
                   <div class="label-wrapper">
                     <p>SQL</p>
   
-                    <span class="span">70 %</span>
+                    <span class="span">knowledge through coursework</span>
                   </div>
   
                   <div class="progress">
-                    <div class="progress-fill" style="width: 70%; background-color: #e3a6b6"></div>
+                    <div class="progress-fill" style="width: 65%; background-color: #e3a6b6"></div>
                   </div>
   
                 </li>
@@ -220,11 +229,11 @@
                   <div class="label-wrapper">
                     <p>Golang</p>
   
-                    <span class="span">60 %</span>
+                    <span class="span">basic familiarity</span>
                   </div>
   
                   <div class="progress">
-                    <div class="progress-fill" style="width: 60%; background-color: #c7b1dd"></div>
+                    <div class="progress-fill" style="width: 30%; background-color: #c7b1dd"></div>
                   </div>
   
                 </li>
@@ -245,7 +254,7 @@
                   <h3 class="h4 card-title">Web Development</h3>
   
                   <p class="card-text">
-                    HTML/CSS/Javascript
+                    HTML/CSS/JavaScript
                   </p>
   
                 </div>
@@ -278,7 +287,7 @@
                   <h3 class="h4 card-title">IT Support</h3>
   
                   <p class="card-text">
-                    Powershell, SSH, TeamDynamix
+                    Windows/MacOS, TeamDynamix, Powershell, SSH
                   </p>
   
                 </div>
@@ -322,6 +331,13 @@
                 <div class="education-card">
                   <h3 class="h4 education-title">University of Michigan - Ann Arbor</h3>
                   <p class="education-details">Bachelor of Science in Computer Science, June 2023</p>
+                  <p class="relevant-courses">Relevant Coursework:</p>
+                  <p class="course-details"> • EECS281 - Data Structures and Algorithms</p>
+                  <p class="course-details"> • EECS388 - Intro to Computer Security</p>
+                  <p class="course-details"> • EECS441 - Mobile Application Development for Entrepreneurs</p>
+                  <p class="course-details"> • EECS484 - Database Management Systems</p>
+                  <p class="course-details"> • EECS485 - Web Systems</p>
+                  <p class="course-details"> • EECS493 - User Interface Development</p>
                 </div>
               </li>
   
@@ -496,9 +512,9 @@
                 <div class="work-card">
                   <h3 class="h4 work-title">Volunteer Research Assistant</h3>
                   <p class="work-details">Michigan Techological University, Department of Electrical Engineering - Dr. Honyu An's Lab, Aug 2023 - Present</p>
-                  <p class="work-description">• Assisted in a neuromorphic computing research project focused on medical applications.</p>
                   <p class="work-description">• Collaborated with other research team members to achieve project objectives.</p>
-                  <p class="work-description">• Configured Dcoker containers and devloped build processes to ensure portability and reproducibility of the search codebase.</p>
+                  <p class="work-description">• Assisted in a neuromorphic computing research project focused on medical applications.</p>
+                  <p class="work-description">• Configured Docker containers and developed build processes to ensure portability and reproducibility of the search codebase.</p>
                   <p class="work-description">• Managed server environment including user accounts, permissions, storage, and Python packages to support research workloads.</p>
                 </div>
               </li>
@@ -509,6 +525,7 @@
                   <p class="work-details">University of Michigan School of Public Health, Sept 2022 - Aug 2023</p>
                   <p class="work-description">• Updated event pages on the school's website, ensuring accuracy and timeliness of information.</p>
                   <p class="work-description">• Assisted in the development of the faculty/staff section of the school website, ensuring accurate data transfer using Omni CMS.</p>
+                  <p class="work-description">• Provided level one IT support and documented issues in the ticketing system, TeamDynamix, tracking problems from initial report to final resolution.</p>
                 </div>
               </li>
     
@@ -516,8 +533,8 @@
                 <div class="work-card">
                   <h3 class="h4 work-title">Engineering Administration Computer Support</h3>
                   <p class="work-details">University of Michigan College of Engineering, May 2019 - Aug 2019</p>
-                  <p class="work-description">• Provided level two IT support to administrative staff and faculty in the College of Engineering, troubleshooting issues with PCs, Macs, printers, and mobile devices.</p>
-                  <p class="work-description">• Assisted Engineering Administration offices including the Dean, Associate Deans, Student Affairs, and Resource Planning and Management through in-person, email, and phone support.</p>
+                  <p class="work-description">• Provided Level 2 IT support to 100+ administrative staff and faculty across the College of Engineering.</p>
+                  <p class="work-description">• Diagnosed and resolved technical issues with PCs, Macs, mobile devices, printers, email, and software applications.</p>
                   <p class="work-description">• Applied customer service skills to effectively communicate with administrative staff and faculty to diagnose and repair technical issues.</p>
                 </div>
               </li>

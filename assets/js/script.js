@@ -70,3 +70,7 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+
+function openResume() {
+  window.open("resume.pdf", "Resume", "width=600,height=800");
+}
