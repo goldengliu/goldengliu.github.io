@@ -74,3 +74,34 @@ window.addEventListener("load", reveal);
 function openResume() {
   window.open("resume.pdf", "Resume", "width=600,height=800");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.getElementById("contactForm");
+  const confirmationMessage = document.getElementById("confirmationMessage");
+
+  contactForm.addEventListener("submit", function (e) {
+     e.preventDefault();
+
+     const formData = new FormData(contactForm);
+
+     fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+           Accept: "application/json",
+        },
+     })
+     .then(response => response.json())
+     .then(data => {
+        if (data.ok) {
+           // Hide contact form and show confirmation message
+           contactForm.style.display = "none";
+           confirmationMessage.style.display = "block";
+        }
+     })
+     .catch(error => {
+        console.error("Error submitting form:", error);
+        // Handle error if needed
+     });
+  });
+});
