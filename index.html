@@ -10,34 +10,33 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VWFLG5WMP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-7VWFLG5WMP');
   </script>
 
-  <!-- primary meta tags -->
+  <!-- Primary meta tags -->
   <title>Grace Golden Liu - Portfolio</title>
   <meta name="title" content="Grace G Liu.">
-  <meta name="description" content="personal portfolio">
+  <meta name="description" content="Personal portfolio">
 
-  <!-- favicon -->
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- google font link -->
+  <!-- Google Font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preload" as="image" href="./assets/images/grace.jpg">
-
 </head>
 
 <body>
-
-  <!-- #HEADER -->
-
+  <!-- header -->
   <header class="header" data-header>
     <div class="container">
       <a href="#" class="logo">
@@ -45,7 +44,6 @@
       </a>
 
       <nav class="navbar" data-navbar>
-
         <div class="navbar-top">
           <a href="#" class="logo">
             <h2>Grace G. Liu</h2>
@@ -60,54 +58,44 @@
           <li>
             <a href="#home" class="navbar-link">Home</a>
           </li>
-
           <li>
             <a href="#skills" class="navbar-link">Skills</a>
           </li>
-        
           <li>
-            <a href="#education" class="navbar-link">Education</a> 
+            <a href="#education" class="navbar-link">Education</a>
           </li>
-        
           <li>
             <a href="#projects" class="navbar-link">Projects</a>
           </li>
-          
           <li>
             <a href="#work" class="navbar-link">Work</a>
           </li>
-        
           <li>
             <a href="#contact" class="navbar-link">Contact</a>
           </li>
-        
         </ul>
-        
 
         <div class="wrapper">
           <a href="mailto:goldengliu@gmail.com" class="contact-link" target="_blank">goldengliu@gmail.com</a>
         </div>
-        
+
         <ul class="social-list">
           <li>
             <a href="https://github.com/goldengliu" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon> 
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
-          
           <li>
             <a href="https://www.linkedin.com/in/goldengliu" class="social-link" target="_blank">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-          
           <li>
             <a href="https://scholar.google.com/citations?hl=en&user=vFM9iHUAAAAJ&view_op=list_works&gmla=AOV7GLNiyYOiG6vrVa9naX_SzIpzSN_8fqbmdydnnKm6KALEBhUxf9Gkrfsovav-lNsc2lO6H12aHyvh1LQZI2zl" class="social-link" target="_blank">
               <ion-icon name="logo-google-scholar" md-dark></ion-icon>
             </a>
           </li>
         </ul>
-
       </nav>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -115,228 +103,174 @@
       </button>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
-
     </div>
   </header>
 
   <main>
     <article>
-      <section id = "home">
+      <section id="home">
+        <!-- introduction -->
         <section class="section hero" aria-label="home">
           <div class="container">
-  
+      
             <figure class="hero-banner">
-              <img src="./assets/images/grace.jpg" width="560" height="540" alt="Grace" class="w-100"
-                data-reveal="top">
-  
+              <img src="./assets/images/grace.jpg" width="560" height="540" alt="Grace" class="w-100" data-reveal="top">
             </figure>
-  
+      
             <div class="hero-content">
-  
+      
               <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-                Hi there! I'm <strong style="color: hsla(344, 53%, 62%, 1);">Grace</strong>. 
+                Hi there! I'm <strong style="color: hsla(344, 53%, 62%, 1);">Grace</strong>.
               </h1>
-              
+      
               <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-                I recently graduated with my Bachelors of Science in Computer Science from the University of Michigan - Ann Arbor. 
+                I recently graduated with my Bachelors of Science in Computer Science from the University of Michigan - Ann Arbor.
               </p>
-
+      
               <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-
                 <button class="btn btn-primary" onclick="window.open('Grace_Liu_Resume.pdf')">Resume</button>
-              
                 <a href="#projects" class="btn btn-secondary">See My Recent Projects</a>
-              
               </div>
-  
+      
             </div>
-  
+      
           </div>
         </section>
-      </section>
+      </section>      
       
-      <!-- #skills -->
+      <!-- skills -->
       <section id="skills">
         <section class="section skills" aria-label="skills">
           <div class="container">
-  
             <div class="wrapper">
-  
               <div data-reveal="left">
                 <h2 class="h2 section-title">Languages and Technologies</h2>
-  
                 <p class="section-text">
                   Languages: C/C++, Python, JavaScript, HTML/CSS, SQL, GoLang
-                  
                 </p>
                 <p class="section-text">
                   Technologies: Linux, Git, Figma, REST API, Flask, Docker AWS EC2 Instances, MapReduce
-                  
                 </p>
-  
               </div>
   
               <ul class="progress-list" data-reveal="right">
-  
                 <li class="progress-item">
-  
                   <div class="label-wrapper">
                     <p>C/C++</p>
-  
                     <span class="span">Advanced</span>
                   </div>
-  
                   <div class="progress">
                     <div class="progress-fill" style="width: 100%; background-color: #c7b1dd"></div>
                   </div>
-  
                 </li>
   
                 <li class="progress-item">
-  
                   <div class="label-wrapper">
                     <p>Python</p>
-  
                     <span class="span">Intermediate</span>
                   </div>
-  
                   <div class="progress">
                     <div class="progress-fill" style="width: 75%; background-color: #8caeec"></div>
                   </div>
-  
                 </li>
   
                 <li class="progress-item">
-  
                   <div class="label-wrapper">
                     <p>HTML/CSS and JavaScript</p>
-  
                     <span class="span">Intermediate</span>
                   </div>
-  
                   <div class="progress">
                     <div class="progress-fill" style="width: 90%; background-color: #b0d4c1"></div>
                   </div>
-  
                 </li>
   
                 <li class="progress-item">
-  
                   <div class="label-wrapper">
                     <p>SQL</p>
-  
                     <span class="span">Intermediate</span>
                   </div>
-  
                   <div class="progress">
                     <div class="progress-fill" style="width: 65%; background-color: #e3a6b6"></div>
                   </div>
-  
                 </li>
 
                 <li class="progress-item">
-  
                   <div class="label-wrapper">
                     <p>Golang</p>
-  
                     <span class="span">Novice</span>
                   </div>
-  
                   <div class="progress">
                     <div class="progress-fill" style="width: 30%; background-color: #c7b1dd"></div>
                   </div>
-  
                 </li>
-  
               </ul>
-  
             </div>
   
             <ul class="grid-list">
   
               <li data-reveal="bottom">
                 <div class="skills-card">
-  
                   <div class="card-icon">
                     <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
                   </div>
-  
                   <h3 class="h4 card-title">Web Development</h3>
-  
                   <p class="card-text">
                     HTML/CSS/JavaScript
                   </p>
-  
                 </div>
-              </li>
+              </li>              
   
               <li data-reveal="bottom" data-reveal-delay="0.25s">
                 <div class="skills-card">
-  
                   <div class="card-icon">
                     <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon">
                   </div>
-  
                   <h3 class="h4 card-title">Mobile Design + Development</h3>
-  
                   <p class="card-text">
                     Figma, React Native
                   </p>
-  
                 </div>
               </li>
-  
-              <li data-reveal="bottom" data-reveal-delay="0.5s">
+
+              <li data-reveal="bottom" data-reveal-delay="0.25s">
                 <div class="skills-card">
-  
                   <div class="card-icon">
-                    <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy"
-                      alt="web development icon">
+                    <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon">
                   </div>
-  
-                  <h3 class="h4 card-title">IT Support</h3>
-  
+                  <h3 class="h4 card-title">Mobile Design + Development</h3>
                   <p class="card-text">
-                    Windows/MacOS, TeamDynamix, Powershell, SSH
+                    Figma, React Native
                   </p>
-  
                 </div>
-              </li>
+              </li>              
   
               <li data-reveal="bottom" data-reveal-delay="0.75s">
                 <div class="skills-card">
-  
                   <div class="card-icon">
                     <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon">
                   </div>
-  
                   <h3 class="h4 card-title">Research</h3>
-  
                   <p class="card-text">
                     Neuromorphic Computing, Artificial Intelligence
                   </p>
-  
                 </div>
-              </li>
-  
+              </li>              
             </ul>
-  
           </div>
         </section>
       </section>
 
-      
-      <!-- #EDUCATION -->
+      <!-- education -->
       <section id="education">
         <section class="section education" aria-label="education">
           <div class="container">
-  
+      
             <div class="title-wrapper" data-reveal="top">
               <h2 class="h2 section-title">Education</h2>
             </div>
-  
+      
             <ul class="education-list">
-  
+      
               <li data-reveal="left">
                 <div class="education-card">
                   <h3 class="h4 education-title">University of Michigan - Ann Arbor</h3>
@@ -350,20 +284,17 @@
                   <p class="course-details"> • EECS493 - User Interface Development</p>
                 </div>
               </li>
-  
+      
             </ul>
-  
+      
           </div>
         </section>
-      </section>
+      </section>      
 
-
-      <!-- #PROJECT -->
-        
+      <!-- projects -->
       <section id = "projects">
         <section class="section project" aria-labelledby="project-label">
           <div class="container">
-  
             <div class="title-wrapper" data-reveal="top">
               <div>
                 <h2 class="h2 section-title" id="project-label">Latest Projects</h2>
@@ -374,253 +305,233 @@
               <!--<a href="#" class="btn btn-secondary">See All Projects</a>-->
   
             </div>
-  
             <ul class="grid-list">
   
               <li>
                 <div class="project-card project-card-1" style="background-color: #f8f5fb">
-  
                   <div class="card-content" data-reveal="left">
-  
                     <p class="card-tag" style="color: #a07cc5">Full-Stack Web Development</p>
-  
                     <h3 class="h3 card-title">Instagram Web Clone</h3>
-  
                     <p class="card-text">
-                      Designed and built an Instagram clone web application with core features including user profiles, 
-                      photo uploading, comments, and likes. Developed frontend using HTML/CSS/JS and backend using 
+                      Designed and built an Instagram clone web application with core features including user profiles,
+                      photo uploading, comments, and likes. Developed frontend using HTML/CSS/JS and backend using
                       Python/Flask/SQL while implementing REST API, sessions, and deploying to AWS.
                     </p>
-  
                     <a href="#contact" class="btn-text" style="color: #a07cc5">
                       <span class="span">Message to Request Project Github</span>
-  
                       <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                     </a>
-  
                   </div>
-  
                   <figure class="card-banner" data-reveal="right">
-                    <img src="./assets/images/project-1.png" width="600" height="370" loading="lazy" alt="Web Design"
-                      class="w-100">
+                    <img src="./assets/images/project-1.png" width="600" height="370" loading="lazy" alt="Web Design" class="w-100">
                   </figure>
-  
-                </div>
-              </li>
+                </div>                
+              </li>              
   
               <li>
                 <div class="project-card project-card-2" style="background-color: #f1f5fd">
-  
                   <div class="card-content" data-reveal="right">
-  
                     <p class=" card-tag" style="color: #3f78e0">Information Retrieval System Project</p>
-  
                     <h3 class="h3 card-title">Search Engine</h3>
-  
                     <p class="card-text">
                       Crafted a scalable search engine using text analysis (tf-idf) and link analysis (PageRank) for 
                       accurate results. Developed a MapReduce pipeline for efficient indexing, along with an Index 
                       server for JSON-based search outputs. Designed a user-friendly Search server with a Google/Bing-style interface.
                     </p>
-  
                     <a href="#contact" class="btn-text" style="color: #3f78e0">
                       <span class="span">Message to Request Project Github</span>
-  
                       <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                     </a>
-  
                   </div>
-  
                   <figure class="card-banner" data-reveal="left">
                     <img src="./assets/images/project-2.png" width="600" height="367" loading="lazy" alt="Web Design"
                       class="w-100">
                   </figure>
-  
                 </div>
               </li>
   
               <li>
                 <div class="project-card project-card-3" style="background-color: #f5faf7">
-  
                   <div class="card-content" data-reveal="left">
-  
                     <p class=" card-tag" style="color: #7cb798">Figma Mobile Application Prototype</p>
-  
                     <h3 class="h3 card-title">Projects++</h3>
-  
                     <p class="card-text">
                       Designed and prototyped an app in Figma to address career exploration gaps for computer science students. 
                       Conceptualized solution after conducting user research interviews. Created user-friendly, visually 
                       cohesive app focused on seamless navigation and intuitive user experience.
                     </p>
-  
                     <a href="https://www.figma.com/proto/Dpgnpc9AakZYyvnO6MuVcR/Projects%2B%2B?type=design&node-id=1-2&t=CvsCbJ9kmWe0yddZ-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=87%3A828&mode=design"
                       class="btn-text" style="color: #7cb798" target="_blank">
                       <span class="span">See Project</span>
                       <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                     </a>
-     
                   </div>
-  
                   <figure class="card-banner" data-reveal="right">
                     <img src="./assets/images/project-3.png" width="600" height="367" loading="lazy" alt="Web Design"
                       class="w-100">
                   </figure>
-  
                 </div>
               </li>
   
               <li>
                 <div class="project-card project-card-4" style="background-color: #fcf4f6">
-  
                   <div class="card-content" data-reveal="left">
-  
-                    <p class=" card-tag" style="color: #d16b86">Parallel Processing Project</p>
-  
+                    <p class="card-tag" style="color: #d16b86">Parallel Processing Project</p>
                     <h3 class="h3 card-title">MapReduce</h3>
-  
                     <p class="card-text">
-                      Implemented a MapReduce framework in Python to run distributed data processing jobs on a cluster. 
-                      The framework consists of a Manager that receives MapReduce jobs, partitions the input data, and distributes 
+                      Implemented a MapReduce framework in Python to run distributed data processing jobs on a cluster.
+                      The framework consists of a Manager that receives MapReduce jobs, partitions the input data, and distributes
                       map and reduce tasks to Workers. Workers execute the tasks and communicate with the Manager.
                     </p>
-  
                     <a href="#contact" class="btn-text" style="color: #d16b86">
                       <span class="span">Message to Request Project Github</span>
-  
                       <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                     </a>
-  
                   </div>
-  
                   <figure class="card-banner" data-reveal="right">
-                    <img src="./assets/images/project-4.png" width="620" height="370" loading="lazy" alt="Mobile Design"
-                      class="w-100">
+                    <img
+                      src="./assets/images/project-4.png"
+                      width="620"
+                      height="370"
+                      loading="lazy"
+                      alt="Mobile Design"
+                      class="w-100"
+                    >
                   </figure>
-  
                 </div>
               </li>
-  
             </ul>
-  
           </div>
         </section>
       </section>
 
       
-      <!-- #WORK EXPERIENCE -->
-      <section id = "work">
+      <!-- work experience -->
+      <section id="work">
         <section class="section work" aria-label="work">
           <div class="container">
-    
             <div class="title-wrapper" data-reveal="top">
               <h2 class="h2 section-title">Work Experience</h2>
             </div>
-    
+      
             <ul class="work-list">
               <li data-reveal="left" data-reveal-delay="0.25s">
                 <div class="work-card">
                   <h3 class="h4 work-title">Research Assistant</h3>
-                  <p class="work-details">Michigan Techological University, Department of Electrical Engineering - Dr. Honyu An's Lab, Aug 2023 - Present</p>
-                  <p class="work-description">• Collaborated with other research team members to achieve project objectives.</p>
-                  <p class="work-description">• Assisted in a neuromorphic computing research project focused on medical applications.</p>
-                  <p class="work-description">• Configured Docker containers and developed build processes to ensure portability and reproducibility of the search codebase.</p>
-                  <p class="work-description">• Managed server environment including user accounts, permissions, storage, and Python packages to support research workloads.</p>
+                  <p class="work-details">
+                    Michigan Techological University, Department of Electrical Engineering - Dr. Honyu An's Lab, Aug 2023 - Present
+                  </p>
+                  <p class="work-description">
+                    • Collaborated with other research team members to achieve project objectives.
+                  </p>
+                  <p class="work-description">
+                    • Assisted in a neuromorphic computing research project focused on medical applications.
+                  </p>
+                  <p class="work-description">
+                    • Configured Docker containers and developed build processes to ensure portability and reproducibility of the search codebase.
+                  </p>
+                  <p class="work-description">
+                    • Managed server environment including user accounts, permissions, storage, and Python packages to support research workloads.
+                  </p>
                 </div>
               </li>
-
+      
               <li data-reveal="left">
                 <div class="work-card">
                   <h3 class="h4 work-title">Information Technology Assistant</h3>
                   <p class="work-details">University of Michigan School of Public Health, Sept 2022 - Aug 2023</p>
-                  <p class="work-description">• Updated event pages on the school's website, ensuring accuracy and timeliness of information.</p>
-                  <p class="work-description">• Assisted in the development of the faculty/staff section of the school website, ensuring accurate data transfer using Omni CMS.</p>
-                  <p class="work-description">• Provided level one IT support and documented issues in the ticketing system, TeamDynamix, tracking problems from initial report to final resolution.</p>
+                  <p class="work-description">
+                    • Updated event pages on the school's website, ensuring accuracy and timeliness of information.
+                  </p>
+                  <p class="work-description">
+                    • Assisted in the development of the faculty/staff section of the school website, ensuring accurate data transfer using Omni CMS.
+                  </p>
+                  <p class="work-description">
+                    • Provided level one IT support and documented issues in the ticketing system, TeamDynamix, tracking problems from initial report to final resolution.
+                  </p>
                 </div>
               </li>
-    
+      
               <li data-reveal="left" data-reveal-delay="0.25s">
                 <div class="work-card">
                   <h3 class="h4 work-title">Engineering Administration Computer Support</h3>
                   <p class="work-details">University of Michigan College of Engineering, May 2019 - Aug 2019</p>
-                  <p class="work-description">• Provided Level 2 IT support to 100+ administrative staff and faculty across the College of Engineering.</p>
-                  <p class="work-description">• Diagnosed and resolved technical issues with PCs, Macs, mobile devices, printers, email, and software applications.</p>
-                  <p class="work-description">• Applied customer service skills to effectively communicate with administrative staff and faculty to diagnose and repair technical issues.</p>
+                  <p class="work-description">
+                    • Provided Level 2 IT support to 100+ administrative staff and faculty across the College of Engineering.
+                  </p>
+                  <p class="work-description">
+                    • Diagnosed and resolved technical issues with PCs, Macs, mobile devices, printers, email, and software applications.
+                  </p>
+                  <p class="work-description">
+                    • Applied customer service skills to effectively communicate with administrative staff and faculty to diagnose and repair technical issues.
+                  </p>
                 </div>
               </li>
-    
             </ul>
-    
           </div>
         </section>
       </section>
-
-      <!-- #CONTACT -->
+      
+      <!-- contact -->
       <section id="contact">
         <section class="section contact" aria-label="contact">
-           <div class="container">
-              <div class="contact-card">
-                 <div class="contact-content" data-reveal="left">
-                    <div class="card-icon">
-                       <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
-                    </div>
-                    <h2 class="h2 section-title">Feel free to contact me.</h2>
-                    <p class="section-text">
-                       Reach out to me from this contact form and I will get back to you shortly.
-                    </p>
-                 </div>
-                 <form id="contactForm" action="https://formspree.io/f/mleybqpz" method="POST" class="contact-form" data-reveal="right">
-                    <div class="input-wrapper">
-                       <input type="text" name="name" placeholder="Name *" required class="input-field">
-                       <input type="email" name="email_address" placeholder="Email *" required class="input-field">
-                    </div>
-                    <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
-                    <!-- Prevent spam -->
-                    <input type="text" name="_gotcha" style="display:none">
-                    <button type="submit" class="btn btn-secondary">Send message</button>
-                 </form>
-                 <div id="confirmationMessage" style="display: none;">
-                    <h2 class="h2 section-title">Thank you for your submission!</h2>
-                    <p class="section-text">Your message has been received.</p>
-                 </div>
+          <div class="container">
+            <div class="contact-card">
+              <div class="contact-content" data-reveal="left">
+                <div class="card-icon">
+                  <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
+                </div>
+                <h2 class="h2 section-title">Feel free to contact me.</h2>
+                <p class="section-text">Reach out to me from this contact form and I will get back to you shortly.</p>
               </div>
-           </div>
+              <form
+                id="contactForm"
+                action="https://formspree.io/f/mleybqpz"
+                method="POST"
+                class="contact-form"
+                data-reveal="right"
+              >
+                <div class="input-wrapper">
+                  <input type="text" name="name" placeholder="Name *" required class="input-field">
+                  <input type="email" name="email_address" placeholder="Email *" required class="input-field">
+                </div>
+                <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+                <!-- prevent spam -->
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="btn btn-secondary">Send message</button>
+              </form>
+              <div id="confirmationMessage" style="display: none;">
+                <h2 class="h2 section-title">Thank you for your submission!</h2>
+                <p class="section-text">Your message has been received.</p>
+              </div>
+            </div>
+          </div>
         </section>
-     </section>     
-  
+      </section>
     </article>
   </main>
 
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
+  <!-- footer -->
   <footer class="footer">
     <div class="container">
-
       <p class="copyright">
         ©2023 goldengliu. All rights reserved.
       </p>
-
       <ul class="social-list">
         <li>
           <a href="https://github.com/goldengliu" class="social-link">
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </li>
-        
         <li>
           <a href="https://www.linkedin.com/in/goldengliu" class="social-link">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </li>
       </ul>
-
     </div>
   </footer>
-
+  
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

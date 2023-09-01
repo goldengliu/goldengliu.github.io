@@ -1,23 +1,17 @@
 'use strict';
 
-
-
 /**
- * add event listener on multiple elements
+ * Add event listener on multiple elements
  */
-
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
   }
-}
-
-
+};
 
 /**
  * NAVBAR TOGGLE FOR MOBILE
  */
-
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
@@ -26,17 +20,14 @@ const toggleNavbar = function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("nav-active");
-}
+};
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
-
-
 /**
  * HEADER
- * active header when window scroll down to 100px
+ * Active header when window scroll down to 100px
  */
-
 const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function () {
@@ -47,12 +38,9 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
 /**
  * SCROLL REVEAL
  */
-
 const revealElements = document.querySelectorAll("[data-reveal]");
 const revealDelayElements = document.querySelectorAll("[data-reveal-delay]");
 
@@ -62,7 +50,7 @@ const reveal = function () {
       revealElements[i].classList.add("revealed");
     }
   }
-}
+};
 
 for (let i = 0, len = revealDelayElements.length; i < len; i++) {
   revealDelayElements[i].style.transitionDelay = revealDelayElements[i].dataset.revealDelay;
@@ -80,28 +68,28 @@ document.addEventListener("DOMContentLoaded", function () {
   const confirmationMessage = document.getElementById("confirmationMessage");
 
   contactForm.addEventListener("submit", function (e) {
-     e.preventDefault();
+    e.preventDefault();
 
-     const formData = new FormData(contactForm);
+    const formData = new FormData(contactForm);
 
-     fetch(contactForm.action, {
-        method: "POST",
-        body: formData,
-        headers: {
-           Accept: "application/json",
-        },
-     })
-     .then(response => response.json())
-     .then(data => {
+    fetch(contactForm.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then(response => response.json())
+      .then(data => {
         if (data.ok) {
-           // Hide contact form and show confirmation message
-           contactForm.style.display = "none";
-           confirmationMessage.style.display = "block";
+          // Hide contact form and show confirmation message
+          contactForm.style.display = "none";
+          confirmationMessage.style.display = "block";
         }
-     })
-     .catch(error => {
+      })
+      .catch(error => {
         console.error("Error submitting form:", error);
         // Handle error if needed
-     });
+      });
   });
 });
